@@ -1,0 +1,50 @@
+{
+  "name": "@hopets/prompter",
+  "version": "1.0.0",
+  "description": "Bare-compatible nodejs readline interface abstraction",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "deploy": "npm run build && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HopeTS/prompter.git"
+  },
+  "keywords": [
+    "bare",
+    "node",
+    "nodejs",
+    "js",
+    "ts",
+    "typescript",
+    "pear"
+  ],
+  "author": "Jenna (HopeTS) <jennabaudelaire@pm.me> (https://github.com/HopeTS)",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/HopeTS/prompter/issues"
+  },
+  "homepage": "https://github.com/HopeTS/prompter#readme",
+  "dependencies": {
+    "bare-process": "^4.2.1",
+    "bare-readline": "^1.1.0",
+    "process": "^0.11.10",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  }
+}
